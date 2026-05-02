@@ -11,6 +11,8 @@ import {
 import FadeIn from './components/FadeIn';
 import './index.scss';
 
+import { Analytics } from "@vercel/analytics/react";
+
 function App() {
     const [mode, setMode] = useState<string>('dark');
 
@@ -37,6 +39,7 @@ function App() {
             <Contact/>
         </FadeIn>
         <Footer />
+        <Analytics />
     </div>
     );
 }
